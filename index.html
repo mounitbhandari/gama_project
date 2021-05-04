@@ -15,21 +15,9 @@
 
     <div class="d-flex" style="background-color: cornflowerblue; height: 50px;">
       <div class="col-4" style="padding-top: 10px;">
-        <button style="border-radius: 50px 20px; background-color: darksalmon;" mat-button
-                  [routerLink]="['/']"
-                  routerLinkActive="MyActiveMenu"
-                  [routerLinkActiveOptions]="{exact: true}">Home
-          </button>
-          <button style="border-radius: 50px 20px; background-color: rgb(158, 240, 212);" mat-button
-                  [routerLink]="['/gallery.html']"
-                  routerLinkActive="MyActiveMenu"
-                  [routerLinkActiveOptions]="{exact: true}">Gallery
-          </button>
-          <button style="border-radius: 50px 20px; background-color: rgb(255, 222, 131);" mat-button
-                  [routerLink]="['/testimony']"
-                  routerLinkActive="MyActiveMenu"
-                  [routerLinkActiveOptions]="{exact: true}">Testimony
-          </button>
+        <a  href=""><button style="border-radius: 50px 20px; background-color: darksalmon;" mat-button>Home</button></a>
+        <a target="_blank" href="gallery.html"><button style="border-radius: 50px 20px; background-color: rgb(158, 240, 212);" mat-button  >Gallery</button></a>
+        <a target="_blank" href="testimony.html"><button style="border-radius: 50px 20px; background-color: rgb(255, 222, 131);" mat-button>Testimony</button></a>
       </div>
       <!-- <div class="col-4">test</div> -->
       <!-- <div class="col-4">test</div> -->
