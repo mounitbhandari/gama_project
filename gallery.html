@@ -4,7 +4,31 @@
     background:linear-gradient(217deg, rgba(172, 102, 102, 0.8), rgba(255,0,0,0) 70.71%),
             linear-gradient(127deg, rgba(134, 180, 134, 0.8), rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, rgba(189, 122, 169, 0.8), rgba(0,0,255,0) 70.71%);
-  }</style>
+  }
+
+  #slide-div{
+    animation-name: test;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    /*animation-delay: 4s;*/
+    margin: 30px;
+    background-position: center;
+    height: 300px;
+
+  }
+
+  @keyframes test {
+    0%   {background-image: url("img/sbd1.jpg"); background-size: contain; background-repeat: no-repeat }
+    20%  {background-image: url("img/sbd2.jpg");  background-size: contain; background-repeat: no-repeat}
+    40%  {background-image: url("img/sbd5.jpg"); background-size: contain; background-repeat: no-repeat}
+    60%  {background-image: url("img/sbd6.jpg");  background-size: contain; background-repeat: no-repeat}
+    80%  {background-image: url("img/sbd33.jpg");  background-size: contain; background-repeat: no-repeat}
+    100% {background-image: url("img/sbd34.jpg");  background-size: contain; background-repeat: no-repeat}
+  }
+
+
+</style>
 
 
 
@@ -31,9 +55,10 @@
         <a  href="testimony.html"><button style="border-radius: 50px 20px; background-color: rgb(253, 255, 131);" mat-button>Testimony</button></a>
       </div>
     </div>
-    <div>
-      
+
+    <div id="slide-div">
     </div>
+
 
       
          
@@ -46,53 +71,53 @@
 
 
   <!-- <marquee width="100%" direction="right" height="200px" scrollamount="15"> -->
-    <div class="d-flex">
-      <div class="col-6">
-        <marquee width="100%" direction="right" height="200px" scrollamount="15">
-          <img src="img/sbd11.jpg" width="200px" alt="">
-          <img src="img/sbd11.jpg" width="200px" alt="">
-          <img src="img/sbd11.jpg" width="200px" alt="">
-        </marquee>
-      </div>
-      <div class="col-6">
-        <marquee width="100%" direction="left" height="200px" scrollamount="15">
-          <img src="img/sbd11.jpg" width="200px" alt="">
-          <img src="img/sbd11.jpg" width="200px" alt="">
-          <img src="img/sbd11.jpg" width="200px" alt="">
-        </marquee>
-      </div>
-    </div>
-  </marquee>
+<!--    <div class="d-flex">-->
+<!--      <div class="col-6">-->
+<!--        <marquee width="100%" direction="right" height="200px" scrollamount="15">-->
+<!--          <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--          <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--          <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--        </marquee>-->
+<!--      </div>-->
+<!--      <div class="col-6">-->
+<!--        <marquee width="100%" direction="left" height="200px" scrollamount="15">-->
+<!--          <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--          <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--          <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--        </marquee>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </marquee>-->
 
   <!-- <marquee width="100%" direction="left" height="200px" scrollamount="15"> -->
-    <div class="d-flex">
-      <div class="col-6">
-        <img src="img/sbd11.jpg" width="200px" alt="">
-        <img src="img/sbd11.jpg" width="200px" alt="">
-        <img src="img/sbd11.jpg" width="200px" alt="">
-      </div>
-      <div class="col-6">
-        <img src="img/sbd11.jpg" width="200px" alt="">
-        <img src="img/sbd11.jpg" width="200px" alt="">
-        <img src="img/sbd11.jpg" width="200px" alt="">
-      </div>
-    </div>
-  </marquee>
+<!--    <div class="d-flex">-->
+<!--      <div class="col-6">-->
+<!--        <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--        <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--        <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--      </div>-->
+<!--      <div class="col-6">-->
+<!--        <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--        <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--        <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </marquee>-->
 
   <!-- <marquee width="100%" direction="right" height="200px" scrollamount="15"> -->
-    <div class="d-flex">
-      <div class="col-6">
-        <img src="img/sbd11.jpg" width="200px" alt="">
-        <img src="img/sbd11.jpg" width="200px" alt="">
-        <img src="img/sbd11.jpg" width="200px" alt="">
-      </div>
-      <div class="col-6">
-        <img src="img/sbd11.jpg" width="200px" alt="">
-        <img src="img/sbd11.jpg" width="200px" alt="">
-        <img src="img/sbd11.jpg" width="200px" alt="">
-      </div>
-    </div>
-  </marquee>
+<!--    <div class="d-flex">-->
+<!--      <div class="col-6">-->
+<!--        <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--        <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--        <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--      </div>-->
+<!--      <div class="col-6">-->
+<!--        <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--        <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--        <img src="img/sbd11.jpg" width="200px" alt="">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </marquee>-->
 
 
   
