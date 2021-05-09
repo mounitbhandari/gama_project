@@ -22,7 +22,7 @@
   /*}*/
 
   .blink {
-      animation: blink-animation 5s steps(10, start) infinite;
+      animation: blink-animation 10s steps(10, start) infinite;
       -webkit-animation: blink-animation 5s steps(5, start) infinite;
   }
   @keyframes blink-animation {
@@ -35,6 +35,37 @@
       visibility: hidden;
     }
 
+  }
+
+
+  .wrapper {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    overflow: hidden;
+  }
+
+  .wave {
+    width: 1000px;
+    height: 1025px;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 35%;
+    background: rgba(255, 255, 255, .75);
+    animation: wave 15s infinite linear;
+  }
+
+  @keyframes wave {
+    from { transform: rotate(0deg);}
+    from { transform: rotate(360deg);}
   }
 
 
@@ -76,337 +107,367 @@
     </div>
   </div> -->
 
-  <div id="wish">
-    <div class="d-flex blink" id="happy" style="padding-top: 30px;">
+  <div id="wrapper">
+    <div class="d-flex mb-5" id="happy" style="padding-top: 30px;height: 20%">
       <div class="col-2"></div>
       <div class="col-2">
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd2.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd2.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd3.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd4.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd3.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd4.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd5.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd6.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd7.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd5.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd6.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd7.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd8.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd9.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd8.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd9.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd10.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd11.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-        </div>
-      </div>
-      <div class="col-2">
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd12.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd13.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd14.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-        </div>
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd15.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd16.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-        </div>
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd17.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd18.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd19.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-        </div>
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd20.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd21.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-        </div>
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd22.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd23.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd10.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd11.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
       </div>
       <div class="col-2">
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd24.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd25.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd26.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd12.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd13.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd14.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd27.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd28.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd15.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd16.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd29.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd30.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd31.jpg" width="45px" height="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd17.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd18.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd19.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd32.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd20.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd21.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd33.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-        </div>
-      </div>
-      <div class="col-2">
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd34.jpg" width="45px" height="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd35.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd36.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-        </div>
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd37.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd38.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-        </div>
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd39.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd40.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-        </div>
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd41.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-        </div>
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd42.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd22.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd23.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
       </div>
       <div class="col-2">
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd43.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd44.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd45.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd46.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-2" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-4" style="height: 30px;"></div>
+
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd47.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd48.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd49.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+        </div>
+        <div class="d-flex mt-1">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd32.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd50.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd33.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd50.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-2" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-4" style="height: 30px;"></div>
+
+        </div>
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+        </div>
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd41.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+        </div>
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd42.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd43.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd44.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+        </div>
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd45.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd46.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+        </div>
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd47.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd48.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd49.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+        </div>
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd50.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+        </div>
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd50.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
       </div>
 
     </div>
-    <div class="d-flex" id="birth" style="padding-top: 40px;">
+    <div class="d-flex mb-5" id="birth" style="padding-top: 40px;height: 20%">
       <div class="col-2">
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="ml-3" style="height: 30px;"></div>
+          <div class="mr-2" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="ml-2" style="height: 30px;"></div>
+          <div class="ml-2" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="ml-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-4" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="ml-3" style="height: 30px;"></div>
+          <div class="" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="ml-2" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="ml-2" style="height: 30px;"></div>
+          <div class="ml-2" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="ml-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-4" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="ml-3" style="height: 30px;"></div>
+          <div class="" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="ml-2" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
       </div>
       <div class="col-2">
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-        </div>
-      </div>
-      <div class="col-2">
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-        </div>
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-        </div>
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-        </div>
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-        </div>
-        <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
       </div>
       <div class="col-2">
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-4" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-2" style="height: 30px;"></div>
+
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+<!--          <div class="col-3" style="height: 30px;"></div>-->
+
+          <!-- <div class="col-3" style="height: 30px;"></div> -->
+          <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
         </div>
+
+
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-2" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-4" style="height: 30px;"></div>
+          <!-- <div class="col-3" style="height: 30px;"></div> -->
+          <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-2" style="height: 30px;"></div> -->
         </div>
+
+
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-4" style="height: 30px;"></div>
+<!--          <div class="col-1" style="height: 30px;"></div>-->
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-2" style="height: 30px;"></div>
+          <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
         </div>
       </div>
       <div class="col-2">
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
         </div>
         <div class="d-flex">
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
-          <div class="col-3" style="height: 40px;"></div>
-          <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="45px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+        </div>
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+        </div>
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+        </div>
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+        </div>
+        <div class="d-flex">
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+          <div class="col-3" style="height: 30px;"></div>
+          <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
         </div>
       </div>
       <div class="col-2"></div>
     </div>
-    <div class="d-flex blink" id="day" style="padding-top: 40px;">
+    <div class="d-flex " id="day" style="padding-top: 40px;height: 20%">
       <div class="d-flex col-6">
 
         <!-- 1st div -->
         <div class="col-6">
 
           <div class="d-flex">
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
           </div>
 
 
           <div class="d-flex">
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
           </div>
 
 
           <div class="d-flex">
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
           </div>
 
 
           <div class="d-flex">
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
           </div>
 
 
           <div class="d-flex">
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
           </div>
 
         </div>
@@ -416,52 +477,52 @@
         <div class="col-6">
 
           <div class="d-flex">
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
           </div>
 
 
           <div class="d-flex">
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
           </div>
 
 
           <div class="d-flex">
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
           </div>
 
 
           <div class="d-flex">
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
           </div>
 
 
           <div class="d-flex">
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
-            <div class="col-2" style="height: 40px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
 
           </div>
 
@@ -476,52 +537,55 @@
         <div class="col-4">
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-3" style="height: 30px;"></div>
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
           </div>
 
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"></div> -->
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-4" style="height: 30px;"></div>
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"></div> -->
           </div>
 
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-3" style="height: 30px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
           </div>
 
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"></div> -->
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-4" style="height: 30px;"></div>
+
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"></div> -->
           </div>
 
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"></div> -->
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-3" style="height: 30px;"></div>
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"></div> -->
           </div>
 
         </div>
@@ -530,52 +594,59 @@
         <div class="col-4">
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
+            <div class="col-4" style="height: 30px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-3" style="height: 30px;"></div>
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
           </div>
 
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"></div> -->
+            <div class="col-1" style="height: 30px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+<!--            <div class="col-1" style="height: 30px;"></div>-->
+            <div class="col-3 ml-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-5" style="height: 30px;"></div>
+
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"></div> -->
           </div>
 
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-3" style="height: 30px;"></div>
+            <div class="col-1" style="height: 30px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
           </div>
 
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"></div> -->
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-1" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+<!--            <div class="col-1" style="height: 30px;"></div>-->
+            <div class="col-2 ml-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"></div> -->
           </div>
 
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"></div> -->
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-3" style="height: 30px;"></div>
+            <div class="col-1" style="height: 30px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"></div> -->
           </div>
 
         </div>
@@ -585,52 +656,56 @@
         <div class="col-4">
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
+            <div class="col-3 " style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-3" style="height: 30px;"></div>
+            <div class="col-3 ml-2" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
           </div>
 
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg" width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"></div> -->
+            <div class="ml-3" style="height: 30px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+<!--            <div class="col-1" style="height: 30px;"></div>-->
+            <div class="ml-4" style="height: 30px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg" width="30px" alt="" style="border-radius: 5px;"></div>
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"></div> -->
           </div>
 
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
+            <div class="col-1" style="height: 30px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+<!--            <div class="col-2" style="height: 30px;"></div>-->
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div> -->
           </div>
 
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"></div> -->
+            <div class="col-3 mr-2" style="height: 30px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-3" style="height: 30px;"></div>
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"></div> -->
           </div>
 
 
           <div class="d-flex">
-            <div class="col-3" style="height: 40px;"></div>
-            <div class="col-3" style="height: 40px;"><img src="img/sbd1.jpg"  width="40px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-3" style="height: 40px;"></div>
-            <!-- <div class="col-3" style="height: 40px;"></div> -->
-            <!-- <div class="col-2" style="height: 40px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
-            <div class="col-2" style="height: 40px;"></div> -->
+            <div class="col-3 mr-2" style="height: 30px;"></div>
+            <div class="col-3" style="height: 30px;"><img src="img/sbd1.jpg"  width="30px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-3" style="height: 30px;"></div>
+            <!-- <div class="col-3" style="height: 30px;"></div> -->
+            <!-- <div class="col-2" style="height: 30px;"><img src="img/sbd1.jpg" height="50px" alt="" style="border-radius: 5px;"></div>
+            <div class="col-2" style="height: 30px;"></div> -->
           </div>
 
         </div>
