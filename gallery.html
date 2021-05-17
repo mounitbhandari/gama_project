@@ -137,7 +137,33 @@
       <div class="d-flex">
           <div class="col-4" style="padding-left: 70px; text-align: center;">
 
-            <img id="myImage7" onclick="changeImage7()" src="img/cakeon.png" width="300" >
+            <img id="myImage" onclick="changeImage()" src="img/cakeon.png" width="300" >
+
+            <p>Click the cake </p>
+            <script>
+              function changeImage() {
+                var image = document.getElementById('myImage');
+                if (image.src.match("cakeoff")) {
+                  image.src = "img/cakeon.png";
+                } else {
+                  image.src = "img/cakeoff.png";
+                }
+              }
+              </script>
+            
+            
+            
+              
+              
+              
+            
+          </div>
+          <div class="col-4">
+            <div id="slide-div">
+            </div>
+          </div>
+          <div class="col-4" style="padding-left: 20px; text-align: center;">
+            <img id="myImage7" onclick="changeImage7()" src="img/cakeon.png" width="300">
 
             <p>Click the cake </p>
             <script>
@@ -150,89 +176,6 @@
                 }
               }
               </script>
-            
-            <!-- <img id="myImage1" onclick="changeImage1()" src="img/candleon.png" width="100" height="180">
-            <img id="myImage2" onclick="changeImage2()" src="img/candleon.png" width="100" height="180">
-            <img id="myImage3" onclick="changeImage3()" src="img/candleon.png" width="100" height="180">
-            <img id="myImage4" onclick="changeImage4()" src="img/candleon.png" width="100" height="180">
-            <img id="myImage5" onclick="changeImage5()" src="img/candleon.png" width="100" height="180">
-            <img id="myImage6" onclick="changeImage6()" src="img/candleon.png" width="100" height="180">
-
-            <p>Click the candle </p>
-            <script>
-              function changeImage1() {
-                var image = document.getElementById('myImage1');
-                if (image.src.match("candleoff")) {
-                  image.src = "img/candleon.png";
-                } else {
-                  image.src = "img/candleoff.png";
-                }
-              }
-              function changeImage2() {
-                var image = document.getElementById('myImage2');
-                if (image.src.match("candleoff")) {
-                  image.src = "img/candleon.png";
-                } else {
-                  image.src = "img/candleoff.png";
-                }
-              }
-              function changeImage3() {
-                var image = document.getElementById('myImage3');
-                if (image.src.match("candleoff")) {
-                  image.src = "img/candleon.png";
-                } else {
-                  image.src = "img/candleoff.png";
-                }
-              }
-              function changeImage4() {
-                var image = document.getElementById('myImage4');
-                if (image.src.match("candleoff")) {
-                  image.src = "img/candleon.png";
-                } else {
-                  image.src = "img/candleoff.png";
-                }
-              }
-              function changeImage5() {
-                var image = document.getElementById('myImage5');
-                if (image.src.match("candleoff")) {
-                  image.src = "img/candleon.png";
-                } else {
-                  image.src = "img/candleoff.png";
-                }
-              }
-              function changeImage6() {
-                var image = document.getElementById('myImage6');
-                if (image.src.match("candleoff")) {
-                  image.src = "img/candleon.png";
-                } else {
-                  image.src = "img/candleoff.png";
-                }
-              }
-              </script> -->
-            
-              
-              
-              
-            
-          </div>
-          <div class="col-4">
-            <div id="slide-div">
-            </div>
-          </div>
-          <div class="col-4" style="padding-left: 20px; text-align: center;">
-            <!-- <img id="myImage7" onclick="changeImage7()" src="img/candleoff.png" width="100" height="180">
-
-            <p>Click the candle </p>
-            <script>
-              function changeImage7() {
-                var image = document.getElementById('myImage7');
-                if (image.src.match("candleon")) {
-                  image.src = "img/candleoff.png";
-                } else {
-                  image.src = "img/candleon.png";
-                }
-              }
-              </script> -->
           </div>
       </div>
          
@@ -285,7 +228,7 @@
         </div> -->
       </div>
       <div class="container embed-responsive embed-responsive-21by9" style="width: 800px;">
-        <iframe class="embed-responsive-item" width="200px" src="https://www.youtube.com/embed/uw4O4RJ18As"></iframe>
+        <iframe class="embed-responsive-item" width="200px" src="https://www.youtube.com/embed/uw4O4RJ18As" style="border-radius: 10px;"></iframe>
       </div>
       <div class="d-flex">
         <div class="col-4">
@@ -302,7 +245,7 @@
         </div> -->
       </div>
       <div style="text-align: center;">
-        <img src="img/frame2.jpg" width="750px" alt="">
+        <img src="img/frame2.jpg" width="750px" alt="" style="border-radius: 10px;">
       </div>
       
 
