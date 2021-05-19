@@ -1,11 +1,16 @@
 <script>
     console.log(window.navigator.userAgent);
-    var a =window.navigator.userAgent.match('Chrome');
-    if (a){
-      window.open("index2.html");
+    a =window.navigator.userAgent.indexOf('Chrome');
+    console.log(a);
+    if (a >= 0) {
+        console.log(true);
+        window.location.href = "index2.html";
+    //   window.navigat("index2.html");
+    }else{
+
     }
   </script>
   <!doctype html>
   <html lang="en">
      <h1>Please use Chrome browser</h1> 
-    </html>
+  </html>
