@@ -194,19 +194,23 @@
 
    #body{
     
-    background:linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    background:linear-gradient(217deg, rgba(224, 28, 250, 0.945), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(14, 248, 34, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(38, 136, 62, 0.74), rgba(0,0,255,0) 70.71%);
+            
   } 
+  
 
+
+  
 .balloon {
   display:inline-block;
    width:120px;
-  height:145px;
-  background:rgb(121, 185, 210);
-  border-radius:100%;
+  height:148px;
+  background:rgb(92, 203, 247);
+  border-radius:150%;
   position:relative;
-  box-shadow:aqua -10px -10px 0 rgba(200, 10, 10, 0.07);
+  box-shadow:rgb(207, 77, 233) -10px -10px 0 rgba(76, 219, 9, 0.07);
   margin:20px 30px;
   transition:transform 0.8s ease;
   z-index:10;
@@ -216,14 +220,15 @@
 
 @keyframes balloons {
   0%,100%{ transform:translateY(0) rotate(-20deg); }
-  30%{ transform:translateY(-25px) rotate(30deg); }
+  30%{ transform:translateY(-10px) rotate(18deg); }
+  
 }
 
 
 .balloon:before {
   content:"▲";
   font-size:20px;
-  color:hsl(215,30%,50%);
+  color:rgb(180, 212, 65);
   display:inline;
   text-align:center;
   width:80%;
@@ -239,20 +244,22 @@
   width:0px;
   margin: 4px;
   content:"";
-  background:rgba(0,0,0,0.2); 
+  background:rgba(0, 0, 0, 0.2); 
 }
 
-.balloon:nth-child(2){ background:rgb(97, 88, 194); animation-duration:2s; }
-.balloon:nth-child(2):before { color:rgb(153, 69, 103);  }
+.balloon:nth-child(2){ background:rgb(38, 21, 231); animation-duration:2s; }
+.balloon:nth-child(2):before { color:rgb(236, 22, 108);  }
 
-.balloon:nth-child(3){ background:rgb(27, 211, 43); animation-duration:3s; }
-.balloon:nth-child(3):before { color:rgb(191, 84, 233);  }
+.balloon:nth-child(3){ background:rgb(10, 236, 29); animation-duration:3s; }
+.balloon:nth-child(3):before { color:rgb(233, 15, 117);  }
 
-.balloon:nth-child(4){ background:rgb(224, 41, 9); animation-duration:4s; }
+.balloon:nth-child(5){ background:rgb(194, 236, 3); animation-duration:5s; }
+.balloon:nth-child(5):before { color:rgb(196, 60, 60);  }
+
+.balloon:nth-child(4){ background:rgb(224, 9, 45); animation-duration:4s; }
 .balloon:nth-child(4):before { color:rgb(233, 229, 14);  }
 
-.balloon:nth-child(5){ background:rgb(84, 212, 180); animation-duration:5s; }
-.balloon:nth-child(5):before { color:rgb(128, 196, 60);  }
+
 
   
    .ab {text-align:center;color:rgb(243, 14, 155)}
@@ -266,11 +273,11 @@
       animation-iteration-count: infinite;
       animation-timing-function: ease-out;
       /* animation-delay: 6s; */
-      margin: 30px;
+      margin: 20px;
       background-position: center;
       height: 350px;
       border-style: solid;
-    border-color: #ff0000 #91ee53 #e676f5 rgb(255, 230, 0);
+    border-color: #e60ec9 #fa0202 #761f81 rgb(107, 216, 6);
 
   }
 
@@ -286,6 +293,7 @@
       80% {background-image: url("img/sbd46.jpg");  background-size: contain; background-repeat: no-repeat}
       90% {background-image: url("img/sbd21.jpg");  background-size: contain; background-repeat: no-repeat}
       100% {background-image: url("img/sbd9.jpg");  background-size: contain; background-repeat: no-repeat}
+      110% {background-image: url("img/sbd34.jpg");  background-size: contain; background-repeat: no-repeat}
   }
 
   
@@ -317,9 +325,16 @@
         <a  href="index.html"><button style="border-radius: 50px 20px; background-color: rgb(245, 130, 110);" mat-button>Home</button></a>
         <a  href=""><button style="border-radius: 50px 20px; background-color: rgb(240, 158, 192);" mat-button  >Gallery</button></a>
         <a  href="new.html"><button style="border-radius: 50px 20px; background-color: rgb(253, 255, 131);" mat-button>Testimony</button></a>
+        <div style="text-align: center;">
+          <div class="pyro">
+            <div class="before"></div>
+            <div class="after"></div>
+          </div>  
+        <div>
       </div>
     </div>
 
+      
       <div>
     
           <div class="balloon"></div>
@@ -329,6 +344,14 @@
           <div class="balloon"></div>
           <div class="balloon"></div>
           <div class="balloon"></div>
+          
+
+          <div style="text-align: center;">
+            <div class="pyro">
+              <div class="before"></div>
+              <div class="after"></div>
+            </div>  
+          <div>
       </div>
       
 
@@ -338,22 +361,23 @@
       <div class="d-flex ">
           <div class="col-4 " style="padding-left: 70px; text-align: center;">
             
-            <img id="myImage" onclick="changeImage()" src="img/cakeoff.png" width="300" >
+            <!-- <img id="myImage" onclick="changeImage()" src="img/cakeoff.png" width="300" > -->
+            <img src="img/images.3.jpg" style="border-radius:70px; padding-right:20px;" height="400" width="400">
             <div class="pyro">
               <div class="before"></div>
               <div class="after"></div>
             </div>
-            <h3 style="color: rgb(187, 33, 84);">Click the cake</h3>
-            <script>
+            <!-- <h3 style="color: rgb(187, 33, 84);">Click the cake</h3> -->
+            <!-- <script>
               function changeImage() {
                 var image = document.getElementById('myImage');
                 if (image.src.match("cakeon")) {
-                  image.src = "img/cakeoff.png";
+                  // image.src = "img/cakeoff.png";
                 } else {
                   image.src = "img/cakeon.png";
                 }
               }
-              </script>           
+              </script>            -->
                                     
              
              
@@ -368,13 +392,14 @@
 
 
           <div class="col-4 " style="padding-left: 20px; text-align: center;">
-            <img id="myImage7" onclick="changeImage7()" src="img/cakeoff.png" width="300">
+            <!-- <img id="myImage7" onclick="changeImage7()" src="img/cakeoff.png" width="300"> -->
+            <img src="img/images.3.jpg" style="border-radius:60px; padding-right:20px;" height="400" width="400">
             <div class="pyro">
               <div class="before"></div>
               <div class="after"></div>
           </div>
-          <h3 style="color: rgb(167, 31, 76);">Click the cake</h3>
-            <script>
+          <!-- <h3 style="color: rgb(167, 31, 76);">Click the cake</h3> -->
+            <!-- <script>
               function changeImage7() {
                 var image = document.getElementById('myImage7');
                 if (image.src.match("cakeon")) {
@@ -383,7 +408,7 @@
                   image.src = "img/cakeon.png";
                 }
               }
-              </script>
+              </script> -->
           </div>
       </div>
          
@@ -512,15 +537,6 @@
       
               
               
-            
-              
-
-        
-
-
-    
-    
-    
     </div>
 
 
